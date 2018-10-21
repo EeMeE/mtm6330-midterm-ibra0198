@@ -6330,12 +6330,6 @@ body {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: rgba(0, 0, 0, 0.89); }
-
-article {
-  padding: 2rem 1rem; }
-
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -6492,33 +6486,40 @@ html {
 
 body {
   background-image: url("../../img/sushiboard.jpg");
-  color: rgba(0, 0, 0, 0.78);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #999999;
   font-family: 'Montserrat Alternates', 'Kodchasan', Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 100%;
+  max-width: auto;
   line-height: 1.64rem;
   margin: 0;
   padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgba(0, 0, 0, 0.89); }
+  color: #333333; }
 
 .navbar {
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  background-color: #961717;
-  border-bottom: 3px solid #f0f0f0;
+  background-color: #ffffff;
+  border-bottom: 3px solid #ffcc33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 130px; }
+  width: auto;
+  height: 120px;
+  margin-bottom: 12px; }
 
 nav ul li a {
   text-decoration: none; }
 
+nav ul li a:hover {
+  text-decoration: none; }
+
 .navbar:before {
   content: ' ';
-  border-top: 2px solid #999999;
+  border-top: 2px solid #333333;
   position: absolute;
   top: 0;
   width: 100%; }
@@ -6533,21 +6534,19 @@ nav ul li a {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  height: 100%;
-  padding-left: 1rem; }
+  height: 100%; }
 
 .navbar .logo img {
   height: 100%;
   width: auto;
-  margin-top: 12px; }
+  margin-top: 8px; }
 
 .navbar .nav img {
-  margin-top: 12px; }
+  margin-top: 8px; }
 
 .navbar .nav {
   justify-content: space-between;
   height: 100%;
-  padding-right: 1rem;
   text-decoration: none; }
 
 .navbar .menu-item,
@@ -6559,8 +6558,8 @@ nav ul li a {
 
 .navbar .menu-item {
   border-bottom: 2px solid transparent;
-  color: #666666;
-  height: 32px;
+  color: #333333;
+  height: 28px;
   justify-content: center;
   letter-spacing: 0.5px; }
 
@@ -6574,23 +6573,67 @@ nav ul li a {
   border-color: #666666; }
 
 .block--full {
-  background-image: url("../../img/sushiboard.jpg");
-  max-width: 1400px;
-  max-height: auto; }
+  background-color: #999999;
+  height: auto;
+  align-content: center;
+  text-align: center; }
+
+.map {
+  align-content: center; }
+
+.maincontent {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: auto; }
 
 .block--hf {
-  width: 50%;
-  clear: right;
-  float: left;
-  padding: 1rem; }
+  width: 45%;
+  display: inline-block;
+  padding: 1rem;
+  background: #999999;
+  opacity: 0.5;
+  align-content: center;
+  text-align: center; }
+
+.block--hf_lft {
+  width: 40%;
+  height: 280px;
+  clear: both;
+  display: inline-block;
+  padding: 1rem;
+  background: rgba(153, 153, 153, 0.7);
+  align-content: center;
+  text-align: center; }
+
+.block--hf_rgt {
+  width: 40%;
+  height: 320px;
+  display: inline-block;
+  padding: 1rem;
+  background: rgba(153, 153, 153, 0.7);
+  align-content: center;
+  text-align: center; }
+
+.slogan p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffcc33; }
+
+.about p {
+  font-size: 14px;
+  line-height: 1.4rem; }
+
+.maincontent p h2 {
+  opacity: 1; }
 
 .block--qtr {
   width: 25%; }
 
 .maincontent {
-  background-image: url("/../midterm-Iman-Ibrahim/img/sushiboard.jpg");
-  width: auto;
-  height: auto; }
+  align-items: center;
+  height: 400px; }
 
 @media screen and (max-width: 720px) {
   .navbar .nav {
