@@ -6491,7 +6491,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: transparent;
+  background-image: url("../../img/sushiboard.jpg");
   color: rgba(0, 0, 0, 0.78);
   font-family: 'Montserrat Alternates', 'Kodchasan', Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 100%;
@@ -6506,7 +6506,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: #f5f5f568;
   border-bottom: 3px solid #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6539,7 +6539,7 @@ nav ul li a {
 .navbar .logo img {
   height: 100%;
   width: auto;
-  margin-top: 120px; }
+  margin-top: 12px; }
 
 .navbar .nav img {
   margin-top: 12px; }
