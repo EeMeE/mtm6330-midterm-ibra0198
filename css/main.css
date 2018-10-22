@@ -6497,7 +6497,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   background-color: #ffffff;
-  border-bottom: 3px solid #ffdd33;
+  border-bottom: 3px solid #ff9933;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6509,7 +6509,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  background-color: #ffdd33;
+  background-color: #ff9933;
   display: -webkit-box;
   display: -ms-flexbox;
   display: inline;
@@ -6646,14 +6646,14 @@ nav ul li a:hover {
   font-weight: bold;
   border: 2px solid #ffcc33;
   font-size: 24px;
-  background: #ffdd33; }
+  background: #ff9933; }
 
 .reservebtn a:hover {
   color: white;
   font-weight: bold;
   border: 0;
   font-size: 24px;
-  background: #ffdd33;
+  background: #ff9933;
   transform: scale(1.14); }
 
 .maincontent h2 {
