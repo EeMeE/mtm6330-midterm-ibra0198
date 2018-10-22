@@ -11,11 +11,6 @@ html {
   box-sizing: inherit;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 676ba7cdaeb30193bc1fd7e45eb88cba7b206872
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url('https://fonts.googleapis.com/css?family=Kodchasan|Montserrat+Alternates');
 
@@ -212,10 +207,6 @@ $lightorange: #ffdd33;
 $blue: #66ffcc;
 $lightblue: #99ffff;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 676ba7cdaeb30193bc1fd7e45eb88cba7b206872
 body {
   background-image: url('../../img/sushiboard.jpg');
   background-repeat: repeat-y;
@@ -343,11 +334,7 @@ nav ul li a:hover {
 }
 
 .map {
-<<<<<<< HEAD
   opacity: 1;
-=======
-  opacity: 1.0;
->>>>>>> 676ba7cdaeb30193bc1fd7e45eb88cba7b206872
 }
 
 .maincontent {
@@ -364,7 +351,6 @@ nav ul li a:hover {
   width: 40%;
   clear: both;
   display: inline-block;
-<<<<<<< HEAD
   background: rgba($lightgray, 0.7);
   padding: 1rem;
   align-content: center;
@@ -376,80 +362,11 @@ nav ul li a:hover {
   display: inline-block;
   padding: 1rem;
   background: rgba($lightgray, 0.7);
-=======
-  background: rgba($lightgray, .7);
-  padding: 1rem;
-  align-content: center;
-  text-align: center;
-}
-
-.block--hf_lft {
-  width: 40%;
-  display: inline-block;
-  padding: 1rem;
-  background: rgba($lightgray, .7);
   align-content: center;
   text-align: center;
   vertical-align: middle;
 }
 
-.block--hf_rgt {
-  width: 40%;
-  display: inline-block;
-  padding: 1rem;
-  background: rgba($lightgray, .7);
-  align-content: center;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.slogan {
-  height: 240px;
-  font-size: 32px;
-  font-weight: bold;
-  color: #ffcc33;
-  text-align: center;
-}
-
-.reservebtn a {
-  color: $blk;
-  font-weight: bold;
-  border: 2px solid $lightorange;
-  font-size: 24px;
-  background: $orange;
-}
-
-.reservebtn a:hover {
-  color: white;
-  font-weight: bold;
-  border: 0;
-  font-size: 24px;
-  background: $orange;
-  transform: scale(1.14);
-}
-
-.maincontent h2 {
-  font-size: 18px;
-}
-
-.info {
-  height: 320px;
-  line-height: 1.4rem;
-  text-align: center;
-}
-
-.block--qtr {
-  width: 25%;
-  display: inline-block;
-  padding: 1rem;
-  background: rgba($lightgray, .7);
->>>>>>> 676ba7cdaeb30193bc1fd7e45eb88cba7b206872
-  align-content: center;
-  text-align: center;
-  vertical-align: middle;
-}
-
-<<<<<<< HEAD
 .block--hf_rgt {
   width: 40%;
   display: inline-block;
@@ -504,8 +421,6 @@ nav ul li a:hover {
   text-align: center;
   vertical-align: middle;
 }
-=======
->>>>>>> 676ba7cdaeb30193bc1fd7e45eb88cba7b206872
 
 @media screen and (max-width: 720px) {
   .navbar .nav {
