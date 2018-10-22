@@ -11,8 +11,6 @@ html {
   box-sizing: inherit;
 }
 
-
-
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url('https://fonts.googleapis.com/css?family=Kodchasan|Montserrat+Alternates');
 
@@ -209,7 +207,6 @@ $lightorange: #ffdd33;
 $blue: #66ffcc;
 $lightblue: #99ffff;
 
-
 body {
   background-image: url('../../img/sushiboard.jpg');
   background-repeat: repeat-y;
@@ -337,7 +334,7 @@ nav ul li a:hover {
 }
 
 .map {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .maincontent {
@@ -354,7 +351,7 @@ nav ul li a:hover {
   width: 40%;
   clear: both;
   display: inline-block;
-  background: rgba($lightgray, .7);
+  background: rgba($lightgray, 0.7);
   padding: 1rem;
   align-content: center;
   text-align: center;
@@ -364,7 +361,7 @@ nav ul li a:hover {
   width: 40%;
   display: inline-block;
   padding: 1rem;
-  background: rgba($lightgray, .7);
+  background: rgba($lightgray, 0.7);
   align-content: center;
   text-align: center;
   vertical-align: middle;
@@ -374,7 +371,7 @@ nav ul li a:hover {
   width: 40%;
   display: inline-block;
   padding: 1rem;
-  background: rgba($lightgray, .7);
+  background: rgba($lightgray, 0.7);
   align-content: center;
   text-align: center;
   vertical-align: middle;
@@ -419,12 +416,11 @@ nav ul li a:hover {
   width: 25%;
   display: inline-block;
   padding: 1rem;
-  background: rgba($lightgray, .7);
+  background: rgba($lightgray, 0.7);
   align-content: center;
   text-align: center;
   vertical-align: middle;
 }
-
 
 @media screen and (max-width: 720px) {
   .navbar .nav {
