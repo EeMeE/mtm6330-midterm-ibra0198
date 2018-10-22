@@ -202,8 +202,8 @@ html {
 $blk: #333333;
 $lightgray: #999999;
 $darkgray: #666666;
-$orange: #ffcc33;
-$lightorange: #ffdd33;
+$orange: #ffdd33;
+$lightorange: #ffcc33;
 $blue: #66ffcc;
 $lightblue: #99ffff;
 
@@ -244,6 +244,24 @@ h6 {
   max-width: 1366px;
   height: 120px;
   padding: 0;
+}
+
+.navbar2 {
+  color: #ffffff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  background-color: $orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline;
+  max-width: 1366px;
+  height: 40px;
+  padding: 0;
+}
+
+.navbar li {
+  float: left;
+  display: inline;
 }
 
 nav ul li:last-child {
