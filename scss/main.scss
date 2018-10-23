@@ -205,6 +205,9 @@ html {
   display: table;
 }
 
+
+/* global variables for the colors */
+
 $blk: #333333;
 $lightgray: #999999;
 $darkgray: #666666;
@@ -212,6 +215,8 @@ $orange: #ff9933;
 $lightorange: #ffcc33;
 $blue: #66ffcc;
 $lightblue: #99ffff;
+
+/* body with background image and font family */
 
 body {
   background-image: url('../../img/sushiboard.jpg');
@@ -239,6 +244,8 @@ h5,
 h6 {
   color: $blk;
 }
+
+/* styling for primary navigation */
 
 .navbar {
   -webkit-box-align: center;
@@ -311,6 +318,8 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+/*  styling for secondary navigation on menu page */
+
 .navbar2 .nav2 {
   max-width: 1336px;
   height: 100%;
@@ -379,26 +388,14 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
+/* styling for blocks used throughout website */
+
 .block--full {
   background-color: $lightgray;
   height: auto;
   align-content: center;
   text-align: center;
   border-radius: 8%;
-}
-
-.map {
-  opacity: 1;
-}
-
-.maincontent {
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  max-width: 1366px;
-  height: 100%;
-  margin: 12px auto;
 }
 
 .block--hf {
@@ -432,6 +429,32 @@ nav ul li a:hover {
   text-align: center;
   vertical-align: middle;
   border-radius: 4%;
+}
+
+.block--qtr {
+  max-width: 25%;
+  padding: 1rem;
+  background: rgba($lightgray, 0.7);
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4%;
+}
+
+.map {
+  opacity: 1;
+}
+
+/*  styling for main content on about page */
+
+.maincontent {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 1366px;
+  height: 100%;
+  margin: 12px auto;
 }
 
 .slogan {
@@ -476,16 +499,8 @@ nav ul li a:hover {
   text-shadow: 0 1px 0 black;
 }
 
-.block--qtr {
-  max-width: 25%;
-  padding: 1rem;
-  background: rgba($lightgray, 0.7);
-  align-content: center;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 4%;
-}
 
+/*  styling for main content in menu page */
 .maincontent--menu {
   max-width: 100%;
   height: 100%;
@@ -530,6 +545,8 @@ nav ul li a:hover {
   border: 2px solid $blk;
 }
 
+/*  styling for main content on locations page */
+
 .maincontent--locations {
   padding: 8px;
   margin: auto;
@@ -554,6 +571,9 @@ nav ul li a:hover {
   font-weight: 900;
 }
 
+
+/*  styling for main content on gallery page */
+
 .maincontent--gallery {
   padding: 0;
   margin: auto;
@@ -563,6 +583,19 @@ nav ul li a:hover {
   height: 100%;
   margin-top: 2px;
 }
+
+.carousel {
+  margin: auto;
+  max-width: 90%;
+  height: auto;
+  padding: 12px;
+  background: white;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 4%;
+}
+
+/*  styling for main content on contact page */
 
 .maincontent--contact p,
 .maincontent--contact table {
@@ -581,29 +614,9 @@ nav ul li a:hover {
   display: flex;
 }
 
-.page-footer {
-  width: 100%;
-  color: white;
-  text-align: center;
-  background: $blk;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  margin-top: 12px;
-}
 
-.carousel {
-  margin: auto;
-  max-width: 90%;
-  height: auto;
-  padding: 12px;
-  background: white;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  border-radius: 4%;
 
-}
-
+/*  styling for different media screens */
 
 @media screen and (max-width: 720px) {
   .navbar nav {
@@ -614,16 +627,6 @@ nav ul li a:hover {
     font-size: 12px;
   }
 
-  /* .navbar li {
-    width: 25%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    float: left;
-    clear: both;
-  }
-  */
 
   .navbar2 a {
     font-size: 12px;
@@ -695,6 +698,8 @@ nav ul li a:hover {
   }
 
 }
+
+/*  styling for ipads */
 
 @media screen and (min-width: 720px) and (max-width: 1024px) {
 
