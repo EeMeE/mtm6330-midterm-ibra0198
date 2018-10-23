@@ -578,6 +578,17 @@ nav ul li a:hover {
   margin-top: 12px;
 }
 
+.carousel {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  padding: 12px;
+  background: white;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 4%;
+}
+
 @media screen and (max-width: 720px) {
   .navbar .nav {
     display: block;
@@ -587,4 +598,14 @@ nav ul li a:hover {
   .nav img {
     display: none;
   }
+
+  .card {
+    font-size: 12px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
 }

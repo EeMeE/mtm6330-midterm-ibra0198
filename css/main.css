@@ -6793,9 +6793,24 @@ nav ul li a:hover {
   bottom: 0;
   margin-top: 12px; }
 
+.carousel {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  padding: 12px;
+  background: white;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 4%; }
+
 @media screen and (max-width: 720px) {
   .navbar .nav {
     display: block;
     font-size: 12px; }
   .nav img {
-    display: none; } }
+    display: none; }
+  .card {
+    font-size: 12px; }
+  .card-title {
+    font-size: 14px;
+    font-weight: 700; } }
