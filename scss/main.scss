@@ -591,9 +591,16 @@ nav ul li a:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .navbar .nav {
+  .navbar li {
     display: block;
     font-size: 12px;
+    float: left;
+    clear: both;
+  }
+
+  .navbar2 a {
+    font-size: 10px;
+    font-weight: 100;
   }
 
   .nav img {
