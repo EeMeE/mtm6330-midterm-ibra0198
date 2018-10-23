@@ -216,7 +216,7 @@ $lightblue: #99ffff;
 body {
   background-image: url('../../img/sushiboard.jpg');
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: 100%;
   background-color: $lightgray;
   font-family: 'Montserrat Alternates', 'Kodchasan', Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
@@ -244,12 +244,12 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   background-color: #ffffff;
-  border-bottom: 3px solid $lightorange;
+  border-bottom: 2px solid $blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1366px;
-  height: 124px;
+  height: 122px;
   padding: 0;
   justify-content: space-between;
 }
@@ -321,9 +321,9 @@ nav ul li a:hover {
 }
 
 .elmenu {
-  background-color: $lightorange;
+  background-color: rgba($lightorange, 0.8);
   max-width: 1336;
-  height: 36px;
+  height: 32px;
   text-align: center;
   padding: 0;
   justify-content: space-between;
@@ -337,7 +337,7 @@ nav ul li a:hover {
   width: 10%;
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -362,9 +362,10 @@ nav ul li a:hover {
   letter-spacing: 0.5px;
 }
 
-.navbar ul li:hover {
-  background-color: $blue;
-  border-radius: 18%;
+.navbar .menu-item:hover {
+  background-color: $lightgray;
+  border-radius: 8%;
+  color: white;
   cursor: pointer;
   text-decoration: none;
 }
@@ -372,7 +373,9 @@ nav ul li a:hover {
 .navbar .menu-item.active,
 .navbar .menu-item:active {
   font-weight: bolder;
-  border: $lightblue;
+  background-color: $blue;
+  border-radius: 12%;
+  width: 100%;
   transform: scale(1.1);
 }
 
@@ -381,6 +384,7 @@ nav ul li a:hover {
   height: auto;
   align-content: center;
   text-align: center;
+  border-radius: 8%;
 }
 
 .map {
@@ -394,7 +398,7 @@ nav ul li a:hover {
   justify-content: center;
   max-width: 1366px;
   height: 100%;
-  margin-top: 12px;
+  margin: 12px auto;
 }
 
 .block--hf {
@@ -405,6 +409,7 @@ nav ul li a:hover {
   padding: 1rem;
   align-content: center;
   text-align: center;
+  border-radius: 4%;
 }
 
 .block--hf_lft {
@@ -415,6 +420,7 @@ nav ul li a:hover {
   align-content: center;
   text-align: center;
   vertical-align: middle;
+  border-radius: 4%;
 }
 
 .block--hf_rgt {
@@ -425,11 +431,13 @@ nav ul li a:hover {
   align-content: center;
   text-align: center;
   vertical-align: middle;
+  border-radius: 4%;
 }
 
 .slogan {
   height: 240px;
   font-size: 32px;
+  text-shadow: 0 1px 1px $blk;
   font-weight: bold;
   color: $lightorange;
   text-align: center;
@@ -438,13 +446,13 @@ nav ul li a:hover {
 .reservebtn a {
   color: white;
   font-weight: bold;
-  border: 2px solid $lightorange;
+  text-shadow: 0 1px 0 black;
   font-size: 24px;
   background: $orange;
 }
 
 .reservebtn a:hover {
-  color: $blk;
+  color: $lightgray;
   font-weight: bold;
   border: 0;
   font-size: 24px;
@@ -454,22 +462,34 @@ nav ul li a:hover {
 
 .maincontent h2 {
   font-size: 18px;
+  font-weight: 800;
+  text-shadow: 0 1px 0 black;
+  color: $orange;
 }
 
 .info {
   height: 320px;
   line-height: 1.4rem;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 1px 0 black;
 }
 
 .block--qtr {
   width: 25%;
-  display: inline-block;
   padding: 1rem;
   background: rgba($lightgray, 0.7);
   align-content: center;
   text-align: center;
   vertical-align: middle;
+  border-radius: 4%;
+}
+
+.maincontent--menu {
+  max-width: 100%;
+  height: 100%;
+  align-content: center;
 }
 
 .card-deck {
@@ -477,27 +497,81 @@ nav ul li a:hover {
   align-items: center;
   margin: auto;
   justify-content: center;
-  margin: 18px;
+
 }
 
 .card {
-  max-width: 320px;
-  height: 420px;
+  max-width: 280px;
+  height: 380px;
   align-content: center;
   justify-content: center;
+  padding: 8px;
+  color: $blk;
 }
 
 .card:hover {
-  transform: scale(1.5);
+  transform: scale(1.04);
 }
 
+.card-img-top {
+  border: 2px solid $blk;
+}
 
+.maincontent--locations {
+  padding: 8px;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 90%;
+  height: 100%;
+  margin-top: 12px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.maincontent--locations p,
+.maincontent--locations table {
+  color: white;
+  font-size: 16px;
+}
+
+.maincontent--locations p {
+  font-weight: 900;
+}
+
+.maincontent--gallery {
+  padding: 0;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  margin-top: 2px;
+}
+
+.maincontent--contact p,
+.maincontent--contact table {
+  color: white;
+  font-size: 16px;
+}
+
+.maincontent--contact {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 1366px;
+  height: 100%;
+  margin: 12px auto;
+}
 
 .page-footer {
   width: 100%;
   color: white;
   text-align: center;
-  background: $lightblue;
+  background: $blk;
   position: fixed;
   left: 0;
   bottom: 0;

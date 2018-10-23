@@ -6483,7 +6483,7 @@ html {
 body {
   background-image: url("../../img/sushiboard.jpg");
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: 100%;
   background-color: #999999;
   font-family: 'Montserrat Alternates', 'Kodchasan', Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 100%;
@@ -6503,12 +6503,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   background-color: #ffffff;
-  border-bottom: 3px solid #ffcc33;
+  border-bottom: 2px solid #66ffcc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1366px;
-  height: 124px;
+  height: 122px;
   padding: 0;
   justify-content: space-between; }
 
@@ -6569,9 +6569,9 @@ nav ul li a:hover {
   text-align: center; }
 
 .elmenu {
-  background-color: #ffcc33;
+  background-color: rgba(255, 204, 51, 0.8);
   max-width: 1336;
-  height: 36px;
+  height: 32px;
   text-align: center;
   padding: 0;
   justify-content: space-between;
@@ -6583,7 +6583,7 @@ nav ul li a:hover {
   width: 10%;
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600; }
 
 .elmenu a:hover {
@@ -6604,23 +6604,27 @@ nav ul li a:hover {
   justify-content: center;
   letter-spacing: 0.5px; }
 
-.navbar ul li:hover {
-  background-color: #66ffcc;
-  border-radius: 18%;
+.navbar .menu-item:hover {
+  background-color: #999999;
+  border-radius: 8%;
+  color: white;
   cursor: pointer;
   text-decoration: none; }
 
 .navbar .menu-item.active,
 .navbar .menu-item:active {
   font-weight: bolder;
-  border: #99ffff;
+  background-color: #66ffcc;
+  border-radius: 12%;
+  width: 100%;
   transform: scale(1.1); }
 
 .block--full {
   background-color: #999999;
   height: auto;
   align-content: center;
-  text-align: center; }
+  text-align: center;
+  border-radius: 8%; }
 
 .map {
   opacity: 1; }
@@ -6632,7 +6636,7 @@ nav ul li a:hover {
   justify-content: center;
   max-width: 1366px;
   height: 100%;
-  margin-top: 12px; }
+  margin: 12px auto; }
 
 .block--hf {
   width: 40%;
@@ -6641,7 +6645,8 @@ nav ul li a:hover {
   background: rgba(153, 153, 153, 0.7);
   padding: 1rem;
   align-content: center;
-  text-align: center; }
+  text-align: center;
+  border-radius: 4%; }
 
 .block--hf_lft {
   width: 40%;
@@ -6650,7 +6655,8 @@ nav ul li a:hover {
   background: rgba(153, 153, 153, 0.7);
   align-content: center;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  border-radius: 4%; }
 
 .block--hf_rgt {
   width: 40%;
@@ -6659,11 +6665,13 @@ nav ul li a:hover {
   background: rgba(153, 153, 153, 0.7);
   align-content: center;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  border-radius: 4%; }
 
 .slogan {
   height: 240px;
   font-size: 32px;
+  text-shadow: 0 1px 1px #333333;
   font-weight: bold;
   color: #ffcc33;
   text-align: center; }
@@ -6671,12 +6679,12 @@ nav ul li a:hover {
 .reservebtn a {
   color: white;
   font-weight: bold;
-  border: 2px solid #ffcc33;
+  text-shadow: 0 1px 0 black;
   font-size: 24px;
   background: #ff9933; }
 
 .reservebtn a:hover {
-  color: #333333;
+  color: #999999;
   font-weight: bold;
   border: 0;
   font-size: 24px;
@@ -6684,43 +6692,102 @@ nav ul li a:hover {
   transform: scale(1.14); }
 
 .maincontent h2 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 800;
+  text-shadow: 0 1px 0 black;
+  color: #ff9933; }
 
 .info {
   height: 320px;
   line-height: 1.4rem;
-  text-align: center; }
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 1px 0 black; }
 
 .block--qtr {
   width: 25%;
-  display: inline-block;
   padding: 1rem;
   background: rgba(153, 153, 153, 0.7);
   align-content: center;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  border-radius: 4%; }
+
+.maincontent--menu {
+  max-width: 100%;
+  height: 100%;
+  align-content: center; }
 
 .card-deck {
   max-width: 100%;
   align-items: center;
   margin: auto;
-  justify-content: center;
-  margin: 18px; }
-
-.card {
-  max-width: 320px;
-  height: 420px;
-  align-content: center;
   justify-content: center; }
 
+.card {
+  max-width: 280px;
+  height: 380px;
+  align-content: center;
+  justify-content: center;
+  padding: 8px;
+  color: #333333; }
+
 .card:hover {
-  transform: scale(1.5); }
+  transform: scale(1.04); }
+
+.card-img-top {
+  border: 2px solid #333333; }
+
+.maincontent--locations {
+  padding: 8px;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 90%;
+  height: 100%;
+  margin-top: 12px;
+  display: flex;
+  vertical-align: middle; }
+
+.maincontent--locations p,
+.maincontent--locations table {
+  color: white;
+  font-size: 16px; }
+
+.maincontent--locations p {
+  font-weight: 900; }
+
+.maincontent--gallery {
+  padding: 0;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  margin-top: 2px; }
+
+.maincontent--contact p,
+.maincontent--contact table {
+  color: white;
+  font-size: 16px; }
+
+.maincontent--contact {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 1366px;
+  height: 100%;
+  margin: 12px auto; }
 
 .page-footer {
   width: 100%;
   color: white;
   text-align: center;
-  background: #99ffff;
+  background: #333333;
   position: fixed;
   left: 0;
   bottom: 0;
