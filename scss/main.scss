@@ -199,6 +199,12 @@ html {
   box-sizing: inherit;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 $blk: #333333;
 $lightgray: #999999;
 $darkgray: #666666;
@@ -220,7 +226,8 @@ body {
   line-height: 1.64rem;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
@@ -237,31 +244,20 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   background-color: #ffffff;
-  border-bottom: 3px solid $orange;
+  border-bottom: 3px solid $lightorange;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1366px;
-  height: 120px;
+  height: 124px;
   padding: 0;
-}
-
-.navbar2 {
-  color: #ffffff;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  background-color: $orange;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: inline;
-  max-width: 1366px;
-  height: 40px;
-  padding: 0;
+  justify-content: space-between;
 }
 
 .navbar li {
-  float: left;
-  display: inline;
+  width: 18%;
+  text-align: center;
+  border-top: 2px solid white;
 }
 
 nav ul li:last-child {
@@ -315,6 +311,41 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+.navbar2 .nav2 {
+  max-width: 1336px;
+  height: 100%;
+  text-decoration: none;
+  flex-grow: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.elmenu {
+  background-color: $lightorange;
+  max-width: 1336;
+  height: 36px;
+  text-align: center;
+  padding: 0;
+  justify-content: space-between;
+  border-bottom: 2px solid $orange;
+  vertical-align: middle;
+  margin: auto;
+
+}
+
+.elmenu a {
+  width: 10%;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.elmenu a:hover {
+  color: $darkgray;
+  font-weight: 900;
+}
+
 .navbar .menu-item,
 .navbar .nav {
   display: flex;
@@ -326,13 +357,14 @@ nav ul li a:hover {
 .navbar .menu-item {
   border-bottom: 2px solid transparent;
   color: $blk;
-  height: 24px;
+  height: 28px;
   justify-content: center;
   letter-spacing: 0.5px;
 }
 
-.navbar .menu-item:hover {
-  background-color: #f0f0f0;
+.navbar ul li:hover {
+  background-color: $blue;
+  border-radius: 18%;
   cursor: pointer;
   text-decoration: none;
 }
@@ -340,7 +372,7 @@ nav ul li a:hover {
 .navbar .menu-item.active,
 .navbar .menu-item:active {
   font-weight: bolder;
-  border-color: transparent;
+  border: $lightblue;
   transform: scale(1.1);
 }
 
@@ -361,7 +393,7 @@ nav ul li a:hover {
   text-align: center;
   justify-content: center;
   max-width: 1366px;
-  height: 360px;
+  height: 100%;
   margin-top: 12px;
 }
 
@@ -399,12 +431,12 @@ nav ul li a:hover {
   height: 240px;
   font-size: 32px;
   font-weight: bold;
-  color: #ffcc33;
+  color: $lightorange;
   text-align: center;
 }
 
 .reservebtn a {
-  color: $blk;
+  color: white;
   font-weight: bold;
   border: 2px solid $lightorange;
   font-size: 24px;
@@ -412,11 +444,11 @@ nav ul li a:hover {
 }
 
 .reservebtn a:hover {
-  color: white;
+  color: $blk;
   font-weight: bold;
   border: 0;
   font-size: 24px;
-  background: $orange;
+  background: $lightorange;
   transform: scale(1.14);
 }
 
@@ -438,6 +470,38 @@ nav ul li a:hover {
   align-content: center;
   text-align: center;
   vertical-align: middle;
+}
+
+.card-deck {
+  max-width: 100%;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  margin: 18px;
+}
+
+.card {
+  max-width: 320px;
+  height: 420px;
+  align-content: center;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: scale(1.5);
+}
+
+
+
+.page-footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+  background: $lightblue;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 12px;
 }
 
 @media screen and (max-width: 720px) {

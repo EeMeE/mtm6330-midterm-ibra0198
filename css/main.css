@@ -6475,6 +6475,11 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 body {
   background-image: url("../../img/sushiboard.jpg");
   background-repeat: repeat-y;
@@ -6487,7 +6492,8 @@ body {
   line-height: 1.64rem;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -6497,29 +6503,19 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   background-color: #ffffff;
-  border-bottom: 3px solid #ff9933;
+  border-bottom: 3px solid #ffcc33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1366px;
-  height: 120px;
-  padding: 0; }
-
-.navbar2 {
-  color: #ffffff;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  background-color: #ff9933;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: inline;
-  max-width: 1366px;
-  height: 40px;
-  padding: 0; }
+  height: 124px;
+  padding: 0;
+  justify-content: space-between; }
 
 .navbar li {
-  float: left;
-  display: inline; }
+  width: 18%;
+  text-align: center;
+  border-top: 2px solid white; }
 
 nav ul li:last-child {
   margin-right: 12px; }
@@ -6564,6 +6560,36 @@ nav ul li a:hover {
   height: 100%;
   text-decoration: none; }
 
+.navbar2 .nav2 {
+  max-width: 1336px;
+  height: 100%;
+  text-decoration: none;
+  flex-grow: 1;
+  align-items: center;
+  text-align: center; }
+
+.elmenu {
+  background-color: #ffcc33;
+  max-width: 1336;
+  height: 36px;
+  text-align: center;
+  padding: 0;
+  justify-content: space-between;
+  border-bottom: 2px solid #ff9933;
+  vertical-align: middle;
+  margin: auto; }
+
+.elmenu a {
+  width: 10%;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600; }
+
+.elmenu a:hover {
+  color: #666666;
+  font-weight: 900; }
+
 .navbar .menu-item,
 .navbar .nav {
   display: flex;
@@ -6574,19 +6600,20 @@ nav ul li a:hover {
 .navbar .menu-item {
   border-bottom: 2px solid transparent;
   color: #333333;
-  height: 24px;
+  height: 28px;
   justify-content: center;
   letter-spacing: 0.5px; }
 
-.navbar .menu-item:hover {
-  background-color: #f0f0f0;
+.navbar ul li:hover {
+  background-color: #66ffcc;
+  border-radius: 18%;
   cursor: pointer;
   text-decoration: none; }
 
 .navbar .menu-item.active,
 .navbar .menu-item:active {
   font-weight: bolder;
-  border-color: transparent;
+  border: #99ffff;
   transform: scale(1.1); }
 
 .block--full {
@@ -6604,7 +6631,7 @@ nav ul li a:hover {
   text-align: center;
   justify-content: center;
   max-width: 1366px;
-  height: 360px;
+  height: 100%;
   margin-top: 12px; }
 
 .block--hf {
@@ -6642,18 +6669,18 @@ nav ul li a:hover {
   text-align: center; }
 
 .reservebtn a {
-  color: #333333;
+  color: white;
   font-weight: bold;
   border: 2px solid #ffcc33;
   font-size: 24px;
   background: #ff9933; }
 
 .reservebtn a:hover {
-  color: white;
+  color: #333333;
   font-weight: bold;
   border: 0;
   font-size: 24px;
-  background: #ff9933;
+  background: #ffcc33;
   transform: scale(1.14); }
 
 .maincontent h2 {
@@ -6672,6 +6699,32 @@ nav ul li a:hover {
   align-content: center;
   text-align: center;
   vertical-align: middle; }
+
+.card-deck {
+  max-width: 100%;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  margin: 18px; }
+
+.card {
+  max-width: 320px;
+  height: 420px;
+  align-content: center;
+  justify-content: center; }
+
+.card:hover {
+  transform: scale(1.5); }
+
+.page-footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+  background: #99ffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 12px; }
 
 @media screen and (max-width: 720px) {
   .navbar .nav {
