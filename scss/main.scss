@@ -561,10 +561,11 @@ nav ul li a:hover {
   align-content: center;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  max-width: 1366px;
+  justify-content: space-between;
+  max-width: 80%;
   height: 100%;
   margin: 12px auto;
+  display: flex;
 }
 
 .page-footer {
