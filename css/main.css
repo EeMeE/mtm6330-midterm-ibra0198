@@ -6639,7 +6639,7 @@ nav ul li a:hover {
   margin: 12px auto; }
 
 .block--hf {
-  width: 40%;
+  max-width: 40%;
   clear: both;
   display: inline-block;
   background: rgba(153, 153, 153, 0.7);
@@ -6649,7 +6649,7 @@ nav ul li a:hover {
   border-radius: 4%; }
 
 .block--hf_lft {
-  width: 40%;
+  max-width: 40%;
   display: inline-block;
   padding: 1rem;
   background: rgba(153, 153, 153, 0.7);
@@ -6659,7 +6659,7 @@ nav ul li a:hover {
   border-radius: 4%; }
 
 .block--hf_rgt {
-  width: 40%;
+  max-width: 40%;
   display: inline-block;
   padding: 1rem;
   background: rgba(153, 153, 153, 0.7);
@@ -6669,7 +6669,7 @@ nav ul li a:hover {
   border-radius: 4%; }
 
 .slogan {
-  height: 240px;
+  height: auto;
   font-size: 32px;
   text-shadow: 0 1px 1px #333333;
   font-weight: bold;
@@ -6698,7 +6698,7 @@ nav ul li a:hover {
   color: #ff9933; }
 
 .info {
-  height: 320px;
+  height: auto;
   line-height: 1.4rem;
   text-align: center;
   color: white;
@@ -6706,7 +6706,7 @@ nav ul li a:hover {
   text-shadow: 0 1px 0 black; }
 
 .block--qtr {
-  width: 25%;
+  max-width: 25%;
   padding: 1rem;
   background: rgba(153, 153, 153, 0.7);
   align-content: center;
@@ -6717,7 +6717,19 @@ nav ul li a:hover {
 .maincontent--menu {
   max-width: 100%;
   height: 100%;
-  align-content: center; }
+  align-content: center;
+  text-align: center; }
+
+.maincontent--menu h2 {
+  width: 33%;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(255, 153, 51, 0.7);
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 12px;
+  border-radius: 4%; }
 
 .card-deck {
   max-width: 100%;
@@ -6746,8 +6758,8 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  max-width: 90%;
-  height: 100%;
+  width: 90%;
+  height: auto;
   margin-top: 12px;
   display: flex;
   vertical-align: middle; }
@@ -6779,7 +6791,7 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  max-width: 80%;
+  max-width: 90%;
   height: 100%;
   margin: 12px auto;
   display: flex; }
@@ -6796,8 +6808,8 @@ nav ul li a:hover {
 
 .carousel {
   margin: auto;
-  width: 90%;
-  height: 100%;
+  max-width: 90%;
+  height: auto;
   padding: 12px;
   background: white;
   margin-top: 12px;
@@ -6805,18 +6817,79 @@ nav ul li a:hover {
   border-radius: 4%; }
 
 @media screen and (max-width: 720px) {
-  .navbar li {
-    display: block;
+  .navbar nav {
+    width: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px; }
+  /* .navbar li {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     font-size: 12px;
     float: left;
-    clear: both; }
+    clear: both;
+  }
+  */
   .navbar2 a {
-    font-size: 10px;
-    font-weight: 100; }
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center; }
   .nav img {
     display: none; }
   .card {
     font-size: 12px; }
   .card-title {
     font-size: 14px;
-    font-weight: 700; } }
+    font-weight: 700; }
+  .maincontent--contact p,
+  .maincontent--contact table {
+    color: white;
+    font-size: 12px; }
+  .slogan {
+    font-size: 16px;
+    height: 200px; }
+  .info {
+    font-size: 12px; }
+  .block--hf,
+  .block--hf_rgt,
+  .block--hf_lft,
+  .block--qtr {
+    max-width: 80%;
+    display: block;
+    float: none;
+    clear: both;
+    line-height: 1rem;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px; }
+  .maincontent,
+  .maincontent--contact,
+  .maincontent--gallery,
+  .maincontent--locations,
+  .maincontent--menu {
+    align-items: center;
+    float: none;
+    clear: both;
+    margin: auto;
+    display: block; }
+  .maincontent--menu h2 {
+    font-size: 18px; }
+  iframe {
+    max-width: 150px;
+    height: auto; } }
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  .maincontent--locations p,
+  .maincontent--locations table {
+    text-align: left;
+    font-size: 12px; }
+  .maincontent--contact p,
+  .maincontent--contact table {
+    text-align: left;
+    font-size: 12px; }
+  iframe {
+    width: 240px;
+    height: auto; } }
